@@ -1,0 +1,318 @@
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #005f75;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #3f3d56;
+}
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos do Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Botão para alternar o modo */
+.toggle-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #005f75;
+}
+
+
+nav {
+  background-color: #ABABEB;
+  padding: 10px 0;
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #3C35CE;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+header {
+  background-color: #ABABEB;
+  padding: 40px;
+  text-align: center;
+}
+header h1 {
+  font-size: 36px;
+  color: #3f3d56;
+  font-weight: bold;
+}
+
+
+#sobre .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 20px;
+}
+
+.foto {
+  text-align: center;
+  max-width: 200px;
+}
+.foto img {
+  width: 100%;
+  border-radius: 10px;
+}
+.foto p {
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.sobre-texto, .habilidades {
+  max-width: 400px;
+}
+
+.sobre-texto h2 {
+  font-size: 24px;
+  color: #3f3d56;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.sobre-texto p, .habilidades p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+header h1 strong {
+  color: #5c5cff;
+  font-size: 40px;
+}
+
+/* Seção Habilidades */
+#habilidades {
+  background-color: #f4f4f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#habilidades h2 {
+  font-size: 24px;
+  color: #5c5cff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.habilidades-texto p {
+  font-size: 16px;
+  color: #3f3d56;
+  line-height: 1.6;
+  margin: 0 auto 20px;
+  max-width: 600px;
+}
+
+.skills p {
+  font-size: 14px;
+  color: #3f3d56;
+  margin: 10px 0;
+   
+}
+
+/* Seção Meus Trabalhos */
+#trabalhos {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#trabalhos h2 {
+  font-size: 24px;
+  color: #5c5cff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#trabalhos p {
+  font-size: 16px;
+  color: #3f3d56;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+/* Seção Meus Trabalhos */
+#trabalhos {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#trabalhos h2 {
+  font-size: 24px;
+  color: #5c5cff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#trabalhos p {
+  font-size: 16px;
+  color: #3f3d56;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+/* Galeria de Trabalhos */
+.trabalhos-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.trabalho-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.trabalho-item img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.trabalho-item p {
+  font-size: 14px;
+  color: #5c5cff;
+  margin-top: 10px;
+}
+
+/* Seção Contato */
+#contato {
+  background-color: #f4f4f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#contato h2 {
+  font-size: 24px;
+  color: #5c5cff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#contato p {
+  font-size: 16px;
+  color: #3f3d56;
+}
+
+#contato a {
+  color: #5c5cff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Estilos para os rótulos */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilos para os campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilos para o botão de envio */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Estilo para o título */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+.contact-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 13vh;
+}

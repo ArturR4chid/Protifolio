@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Artur Rachid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="#sobre">Quem sou eu</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><button class="toggle-button" onclick="toggleDarkMode()">Alternar Dark Mode</button></li>
+            <script src="Dark.js"></script>
+        </ul>
+    </nav>
+
+  
+    <header>
+        <h1>Eu sou <strong>Artur Rachid</strong> e esse é o meu portfólio</h1>
+    </header>
+
+    
+    <section id="sobre">
+        <div class="container">
+            <div class="foto">
+                <img src="eu.jpg" alt="Foto de Artur Rachid">
+            </div>
+            <div class="sobre-texto">
+                <h2>Sobre mim</h2>
+                <p>Me chamo Artur Rachid e sou um desenvolvedor Full Stack, e vou falar um pouco da minha história no mundo da TI.</p>
+                <p>Quando eu tinha 10 anos, eu comecei a pensar no que eu queria trabalhar, e logo quis trabalhar com programação, então comecei a fazer cursos de programação e robótica na PUC e em escolas de programação, e aos 15 entrei na escola técnica de TI.</p>
+            </div>
+            <div class="habilidades">
+                <p>Como desenvolvedor Full Stack, tenho experiência com: linguagem SQL, sistema Linux e terminal, HTML e CSS, C#, Arduino e Raspberry.</p>
+            </div>
+        </div>
+    </section>
+       
+        <section id="habilidades">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <div class="habilidades-texto">
+                    <p>Como desenvolvedor full stack, tenho experiência em ambos os meios de programação: Front-End e Back-End, porém não me limito a somente hard skills, mas sim, tenho muitas soft skills e hard skills.</p>
+                    <div class="skills">
+                        <p><strong>Hard skills:</strong> Tenho domínio de 4 linguagens de programação sendo elas: SQL, HTML, CSS e C#. Além dessas linguagens, também tenho domínio de outros componentes de infra e redes, sendo arduino e terminal linux/debian.</p>
+                        <p><strong>Soft skills:</strong> Comunicação eficaz, Trabalho em equipe, Adaptabilidade e flexibilidade, Resolução de problemas, Criatividade, Gestão de tempo, Liderança, Pensamento crítico e Ética e integridade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        
+        <section id="trabalhos">
+            <div class="container">
+                <h2>Meus Trabalhos</h2>
+                <p>Não basta só eu falar, tenho que mostrar o que sei fazer, então vou mostrar alguns sites que eu fiz.</p>
+            </div>
+        </section>
+        <div class="trabalhos-galeria">
+            <div class="trabalho-item">
+                <img src="image 1.png" alt="Site tabela periódica">
+                <p>Site tabela periódica</p>
+            </div>
+            <div class="trabalho-item">
+                <img src="image 2.png" alt="Site Matrícula">
+                <p>Site Matrícula</p>
+            </div>
+            <div class="trabalho-item">
+                <img src="image 3.png" alt="Site de fotografia">
+                <p>Site de fotografia</p>
+            </div>
+            <div class="trabalho-item">
+                <img src="image 4 (1).png" alt="Site delivery">
+                <p>Site delivery</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <div class="container">
+        <h2>Contato:</h2>
+        <p>Entre em contato comigo através do formulario abaixo! </p>
+    </div>
+</section>
+<div class="contact-form">
+    
+    <form action="seu-script-de-destinacao.php" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="assunto">Assunto:</label><br>
+        <input type="text" id="assunto" name="assunto"><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+</body>
+</html>
