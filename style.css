@@ -1,8 +1,4 @@
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +17,6 @@ body.dark-mode {
   border: none;
   border-radius: 5px;
   margin-top: 20px;
-  transition: background-color 0.3s;
 }
 
 .toggle-button:hover {
@@ -39,13 +34,13 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Estilos do Dark Mode */
+
 body.dark-mode {
   background-color: #121212;
   color: #ffffff;
 }
 
-/* Botão para alternar o modo */
+
 .toggle-button {
   padding: 10px 20px;
   font-size: 16px;
@@ -138,7 +133,6 @@ header h1 strong {
   font-size: 40px;
 }
 
-/* Seção Habilidades */
 #habilidades {
   background-color: #f4f4f9;
   padding: 40px 20px;
@@ -152,22 +146,38 @@ header h1 strong {
   margin-bottom: 20px;
 }
 
-.habilidades-texto p {
+#habilidades p {
   font-size: 16px;
   color: #3f3d56;
   line-height: 1.6;
+  max-width: 800px;
   margin: 0 auto 20px;
-  max-width: 600px;
+  display: flex;
 }
 
-.skills p {
+.skills {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hard-skills,.soft-skills {
+  flex: 1;
+  display: flex;
+}
+
+.hard-skills p, .soft-skills p {
   font-size: 14px;
   color: #3f3d56;
-  margin: 10px 0;
-   
+  line-height: 1.6;
+  display: flex;
 }
 
-/* Seção Meus Trabalhos */
+
+
 #trabalhos {
   background-color: #ffffff;
   padding: 40px 20px;
@@ -188,7 +198,7 @@ header h1 strong {
   max-width: 600px;
   margin: 0 auto;
 }
-/* Seção Meus Trabalhos */
+
 #trabalhos {
   background-color: #ffffff;
   padding: 40px 20px;
@@ -210,7 +220,7 @@ header h1 strong {
   margin: 0 auto 20px;
 }
 
-/* Galeria de Trabalhos */
+
 .trabalhos-galeria {
   display: flex;
   flex-wrap: wrap;
@@ -235,7 +245,7 @@ header h1 strong {
   margin-top: 10px;
 }
 
-/* Seção Contato */
+
 #contato {
   background-color: #f4f4f9;
   padding: 40px 20px;
@@ -269,14 +279,14 @@ form {
   width: 100%;
 }
 
-/* Estilos para os rótulos */
+
 label {
   font-weight: bold;
   display: block;
   margin-bottom: 5px;
 }
 
-/* Estilos para os campos de entrada */
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -288,7 +298,7 @@ textarea {
   box-sizing: border-box;
 }
 
-/* Estilos para o botão de envio */
+
 input[type="submit"] {
   background-color: #4CAF50;
   color: white;
@@ -304,7 +314,7 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-/* Estilo para o título */
+
 h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -315,4 +325,40 @@ h2 {
   align-items: center;
   justify-content: center;
   padding-top: 13vh;
+}
+
+
+
+#rodape {
+  background-color: #3f3d56;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#rodape p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #5c5cff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .skills {
+      flex-direction: column;
+  }
 }
