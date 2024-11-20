@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Artur Rachid</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
+    
+    
+    <script>
+     
+    </script>
     
     <nav>
         <ul>
             <li><a href="#sobre">Quem sou eu</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#github">GitHub</a></li>
+            <li><a href="https://github.com/ArturR4chid">GitHub</a></li>
             <li><a href="#contato">Contato</a></li>
             <li><button class="toggle-button" onclick="toggleDarkMode()">Alternar Dark Mode</button></li>
             <script src="Dark.js"></script>
         </ul>
     </nav>
 
-  
-    <header>
-        <h1>Eu sou <strong>Artur Rachid</strong> e esse é o meu portfólio</h1>
-    </header>
+    <div >
+        <header >
+            <h1  id="typing-effect"></h1>
+        </header>
+    </div>
+    
 
     
     <section id="sobre">
@@ -32,7 +39,7 @@
                 <img src="eu.jpg" alt="">
             </div>
             <div class="sobre-texto">
-                <h2>Sobre mim</h2>
+                <h2 id="text">Sobre mim</h2>
                 <p>Me chamo Artur Rachid e sou um desenvolvedor Full Stack, e vou falar um pouco da minha história no mundo da TI.</p>
                 <p>Quando eu tinha 10 anos, eu comecei a pensar no que eu queria trabalhar, e logo quis trabalhar com programação, então comecei a fazer cursos de programação e robótica na PUC e em escolas de programação, e aos 15 entrei na escola técnica de TI.</p>
             </div>
@@ -42,10 +49,10 @@
         </div>
     </section>
        
-    <section id="habilidades">
+    <section id="habilidades" >
         <div class="container">
-            <h2>Habilidades</h2>
-            <p>Como desenvolvedor full stack, tenho experiência em ambos os meios de programação: Front-End e Back-End, porém não me limito a somente hard skills, mas sim, tenho muitas soft skills e hard skills.</p>
+            <h2 id="text">Habilidades</h2>
+            <p >Como desenvolvedor full stack, tenho experiência em ambos os meios de programação: Front-End e Back-End, porém não me limito a somente hard skills, mas sim, tenho muitas soft skills e hard skills.</p>
             
            
         </div>
@@ -62,7 +69,7 @@
         
         <section id="trabalhos">
             <div class="container">
-                <h2>Meus Trabalhos</h2>
+                <h2 id="text" >Meus Trabalhos</h2>
                 <p>Não basta só eu falar, tenho que mostrar o que sei fazer, então vou mostrar alguns sites que eu fiz.</p>
             </div>
         </section>
@@ -90,7 +97,7 @@
 
 <section id="contato">
     <div class="container">
-        <h2>Contato:</h2>
+        <h2 id="text">Contato:</h2>
         <p>Entre em contato comigo através do formulario abaixo! </p>
     </div>
 </section>
@@ -98,13 +105,16 @@
     
     <form action="seu-script-de-destinacao.php" method="post">
         <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
+        <input type="text" id="nome" ><br><br>
 
         <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email"><br><br>
 
         <label for="assunto">Assunto:</label><br>
-        <input type="text" id="assunto" name="assunto"><br><br>
+        <input type="text" id="assunto" ><br><br>
+
+        <label for="Telefone">Telefone</label><br>
+        <input type="text" id="Telefone"  oninput=Telefone_Forms() maxlength="14"> 
 
         <label for="mensagem">Mensagem:</label><br>
         <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>

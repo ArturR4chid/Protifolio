@@ -28,7 +28,6 @@ body {
   color: #3f3d56;
 }
 body {
-  background-color: #ffffff;
   color: #000000;
   font-family: Arial, sans-serif;
   transition: background-color 0.3s, color 0.3s;
@@ -179,7 +178,6 @@ header h1 strong {
 
 
 #trabalhos {
-  background-color: #ffffff;
   padding: 40px 20px;
   text-align: center;
 }
@@ -200,7 +198,6 @@ header h1 strong {
 }
 
 #trabalhos {
-  background-color: #ffffff;
   padding: 40px 20px;
   text-align: center;
 }
@@ -247,9 +244,9 @@ header h1 strong {
 
 
 #contato {
-  background-color: #f4f4f9;
   padding: 40px 20px;
   text-align: center;
+  background-color: #f4f4f9
 }
 
 #contato h2 {
@@ -267,11 +264,10 @@ header h1 strong {
 #contato a {
   color: #5c5cff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bold; 
 }
 
 form {
-  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -361,4 +357,20 @@ h2 {
   .skills {
       flex-direction: column;
   }
+}
+
+#text {
+  font-size: 3em;
+  animation: float 2s ease-in-out infinite, color-change 4s infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes color-change {
+  0% { color: #ff6b6b; }
+  50% { color: #4caf50; }
+  100% { color: #2196f3; }
 }
